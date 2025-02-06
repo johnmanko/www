@@ -8,6 +8,7 @@ on:
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
+    environment: aws-lambda-deployment
     steps:
       - name: Check out code
         uses: actions/checkout@v4
