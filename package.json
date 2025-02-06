@@ -9,7 +9,7 @@
     "clean": "rm -rf ./dist && mkdir ./dist",
     "clean-package": "rm -rf ./lambda && mkdir ./lambda",
     "package-copy": "npm run clean-package && cd ./lambda && cp ../package.json ./ && mv ../node_modules ./",
-    "package": "npm run package-copy && zip -r ../lambda_function.zip ./",
+    "package": "npm run package-copy && cd ./lambda && zip -r ../lambda_function.zip ./",
     "astro": "astro"
   },
   "dependencies": {
