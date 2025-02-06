@@ -9,7 +9,7 @@ export default defineConfig({
   output: "server",
   build: {
     server: './',
-    serverEntry: 'index.mjs'
+    serverEntry: 'index.mjs',
   },
   adapter: aws({
     deploymentStrategy: "regional",
