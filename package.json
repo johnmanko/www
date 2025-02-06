@@ -6,7 +6,7 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "package": "cd ./dist && zip -r ../lambda_function.zip ./",
+    "package": "cd ./dist && copy ../package.json ./ && cd ./node_modules && zip -r ../lambda_function.zip ./",
     "astro": "astro"
   },
   "dependencies": {

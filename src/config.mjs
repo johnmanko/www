@@ -43,14 +43,14 @@ export const PORTFOLIO = [
     description: 'This website (johnmanko.com).  Uses Astro, GitHub Actions, and deployed as an AWS Lambda function.',
     url: 'https://github.com/johnmanko/www',
     image: 'images/portfolio.webp',
-    tags: ['astro', 'tailwindcss', 'typescript', 'github-pages']
+    tags: ['astrojs', 'tailwind', 'typescript', 'github-pages']
   },
   {
     title: 'Soup to Nuts',
     description: 'Guides for configuring a local Kubernetes cluster with sample microservices.  This project is meant to help developers new to Kubernetes.',
     url: 'https://github.com/johnmanko/soup-to-nuts',
     image: 'https://raw.githubusercontent.com/johnmanko/soup-to-nuts/refs/heads/master/.www/portfolio.webp',
-    tags: ['kubernetes', 'docker', 'microservices', 'kind', 'istio', 'cilium', 'rancher-desktop', 'quarkus', 'springboot', 'linux', 'macos']
+    tags: ['kubernetes', 'docker', 'microservices', 'kind', 'istio', 'cilium', 'rancher-desktop', 'quarkus', 'spring-boot', 'linux', 'macos']
   },
   {
     title: 'Vagrant Kubernetes Cluster',
