@@ -20,7 +20,7 @@ jobs:
             npm ci
             npm run build
       - name: Package application
-        run: zip -r ../lambda_function.zip ./dist
+        run: npm run package
       - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v4
         with:
