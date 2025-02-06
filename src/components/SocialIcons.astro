@@ -1,0 +1,14 @@
+---
+import { SOCIAL_MEDIA } from '../config.mjs';
+const { size } = Astro.props;
+const text_size: string = (size === 'small') ? 'text-md':'text-2xl md:text-5xl'
+---
+<ul class={`menu menu-horizontal rounded-box ${text_size}`}>    
+    {SOCIAL_MEDIA.map((item) => (
+        <li class="md:hover:text-teal-400">
+            <a href={item.url}  target="_blank">
+                <i class={item.icon}></i>
+            </a>
+        </li>
+      ))}
+</ul>

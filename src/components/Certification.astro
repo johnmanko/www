@@ -1,0 +1,4 @@
+---
+const { badge } = Astro.props;
+---
+<a href={`https://www.credly.com/badges/${badge}/public_url`} target="_blank" class="brightness-80 hover:brightness-100 transition duration-300"><img src={`badges/${badge}.png`} width="180" height="180"/></a>

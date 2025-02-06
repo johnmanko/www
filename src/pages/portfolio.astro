@@ -1,0 +1,16 @@
+---
+import Layout from "@Layouts/Layout.astro";
+import { PORTFOLIO } from "../config.mjs";
+import PortfolioProject from "@Components/PortfolioProject.astro";
+---
+<Layout>
+    <div class="flex flex-wrap justify-center gap-4  space-y-4">
+        {
+          PORTFOLIO.map((project) => (
+            
+            <PortfolioProject project={project}/>
+            
+          ))
+        }
+      </div>
+</Layout>

@@ -1,0 +1,11 @@
+
+---
+import { CREDLY_BADGES } from '../config.mjs';
+import Certification from './Certification.astro';
+
+---
+{CREDLY_BADGES.map((badge) => (
+    <div>
+        <Certification badge={badge}/>
+    </div>
+))}

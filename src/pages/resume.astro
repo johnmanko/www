@@ -1,0 +1,25 @@
+---
+
+import Prose from '../components/Prose.astro';
+import Layout from '../layouts/Layout.astro';
+import { getEntry } from 'astro:content';
+import Certifications from '@Components/Certifications.astro';
+
+const entry = await getEntry('resume', 'resume');
+const { Content } = await entry.render();
+---
+<Layout>
+
+<div class="flex justify-center mt-8 mb-8">
+
+  <Prose>
+    <Content />
+  </Prose>
+</div>
+  
+<div class="flex justify-center flex-wrap mt-8 mb-8">
+
+    <Certifications />
+    
+</div>
+</Layout>

@@ -1,0 +1,14 @@
+---
+import SocialIcons from "./SocialIcons.astro";
+---
+
+<footer
+  class="footer bottom-0 sm:footer-horizontal justify-center bg-neutral text-neutral-content items-center p-2 gap-y-2"
+>
+  <aside class="grid-flow-col items-center">
+    <p>Copyright © {new Date().getFullYear()} - All right reserved</p>
+  </aside>
+  <nav class="grid-flow-col gap-4 md:place-self-center md:justify-self-end">
+    <SocialIcons size="small" />
+  </nav>
+</footer>
