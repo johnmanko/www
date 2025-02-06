@@ -10,7 +10,7 @@
     "clean-package": "rm -rf ./lambda && mkdir ./lambda && rm -rf ./lambda-layer && mkdir ./lambda-layer",
     "package-prep-copy-function": "cp -r ./dist/* ./lambda",
     "package-prep-copy-layer": "cp ./package.json ./lambda-layer && cp ./package-lock.json ./lambda-layer",
-    "package-prep-copy": "npm run clean-package && npm package-prep-copy-function && npm run package-prep-copy-layer",
+    "package-prep-copy": "npm run clean-package && npm run package-prep-copy-function && npm run package-prep-copy-layer",
     "package-prep-layer-install": "cd ./lambda-layer && npm ci --omit=dev && mkdir nodejs && mv node_modules ./nodejs/",
     "package-prep": "npm run package-prep-copy && npm run package-prep-layer-install",
     "package-function": "cd ./lambda && zip -r ../lambda_function.zip ./",
