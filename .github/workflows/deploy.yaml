@@ -33,5 +33,9 @@ jobs:
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: us-east-2
       - name: Deploy
-        run: aws lambda update-function-code --function-name ${{ secrets.FUNCTION_NAME }} --zip-file fileb://lambda_function.zip
+        run: |
+            aws s3 sync /dist/client s3://${{ secrets.S3_BUCKET_WWW_PUBLIC }}/
+            aws s3 cp ./lambda-layer.zip s3://${{ secrets.S3_BUCKET_LAMBDA_LAYER }}/
+            aws lambda update-function-code --function-name ${{ secrets.FUNCTION_NAME }} --zip-file fileb://lambda_function.zip
+
 
