@@ -3,9 +3,9 @@ import { SOCIAL_MEDIA } from '../config.mjs';
 const { size } = Astro.props;
 const text_size: string = (size === 'small') ? 'text-md':'text-2xl md:text-5xl'
 ---
-<ul class={`menu menu-horizontal rounded-box ${text_size}`}>    
+<ul class={`menu menu-horizontal rounded-box bg-gradient-to-r from-rose-400 via-fuchsia-500 to-indigo-500 bg-clip-text text-transparent ${text_size}`}>    
     {SOCIAL_MEDIA.map((item) => (
-        <li class="md:hover:text-teal-400">
+        <li class="md:hover:text-blue-500">
             <a href={item.url}  target="_blank">
                 <i class={item.icon}></i>
             </a>

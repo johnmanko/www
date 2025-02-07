@@ -2,20 +2,29 @@
 import { Image } from "astro:assets";
 const { project } = Astro.props;
 ---
-<div class="card card-border w-96 shadow-sm mt-4 bg-slate-800">
-  <figure>
-    <Image src={project.image} width="600" height="338" inferSize={true} alt="Project Header" />
-  </figure>
-  <div class="card-body">
-    <h2 class="card-title">
-      <a class="link link-accent" href={project.url}>{project.title}</a>
-    </h2>
-    <p>
-        {project.description}
-        <div class="divider divider-primary">tags</div>
-    </p>
-    <div class="card-actions justify-center">
-      {project.tags.map((tag) => (<a class="link link-success link-hover" target="_blank" href={`https://stackoverflow.com/questions/tagged/${tag}`}><div class="badge badge-primary">{tag}</div></a>))}
+<div class="w-96 flex-none">
+
+  <div class="card card-border shadow-sm mt-4 bg-slate-800 w-full h-full">
+    <figure>
+      <Image src={project.image} width="600" height="338" inferSize={true} alt="Project Header" />
+    </figure>
+    <div class="card-body">
+      <h2 class="card-title">
+        <p class="text-pink-400">{project.title}</p>
+      </h2>
+      <p>
+          {project.description}
+          <div class="divider divider-primary"><i class="fa-brands fa-stack-overflow"/>tags</div>
+      </p>
+      <div class="card-actions justify-center">
+        {project.tags.map((tag) => (<a class="link link-success link-hover" target="_blank" href={`https://stackoverflow.com/questions/tagged/${tag}`}><div class="badge badge-primary">{tag}</div></a>))}
+      </div>
+      <div class="divider divider-primary mt-8">see more</div>
+      <div class="card-actions justify-center">
+          <button class={`btn btn-secondary ${!project.code_url ? 'disabled':''}`} disabled={!project.code_url ? 'disabled':''} onclick={() => window.open(project.code_url, "_blank")}><i class="fa-brands fa-github"/>Code&nbsp;<i class="fa-solid fa-arrow-up-right-from-square"></i></button>
+          <button class={`btn btn-accent ${!project.live_url ? 'disabled':''}`} disabled={!project.live_url ? 'disabled':''} onclick={() => window.open(project.live_url, "_blank")}><i class="fa-solid fa-paper-plane"></i>Live&nbsp;<i class="fa-solid fa-arrow-up-right-from-square"></i></button>
+      </div>
     </div>
   </div>
+  
 </div>

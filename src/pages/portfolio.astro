@@ -3,22 +3,21 @@ import Layout from "@Layouts/Layout.astro";
 import { PORTFOLIO } from "../config.mjs";
 import PortfolioProject from "@Components/PortfolioProject.astro";
 ---
-<Layout>
 
-  <div class="flex flex-wrap justify-center gap-4  space-y-4">
-    <div role="alert" class="alert alert-info max-w-lg text-center">
-      <p>This collection is a work in progress, and not an exhaustive representation of my experience and knowledge. Thanks for looking!</p>
+<Layout>
+  <div class="flex flex-wrap justify-center gap-4 space-y-4">
+    <div role="alert" class="alert alert-info max-w-lg text-center bg-cyan-800 text-cyan-400">
+      <i class="fa-regular fa-bell text-xl text-cyan-400"></i>
+      <p>
+        This collection is a work in progress, and not an exhaustive
+        representation of my experience and knowledge. Thanks for looking!
+      </p>
     </div>
   </div>
 
-    <div class="flex flex-wrap justify-center gap-4  space-y-4">
-        
-        {
-          PORTFOLIO.map((project) => (
-            
-            <PortfolioProject project={project}/>
-            
-          ))
-        }
-      </div>
+  <div class="flex flex-wrap justify-center gap-4 space-y-4">
+    {PORTFOLIO.map((project) => <PortfolioProject project={project} />)}
+
+    <div class="w-96 flex-none"></div>
+  </div>
 </Layout>
