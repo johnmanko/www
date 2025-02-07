@@ -40,7 +40,7 @@ export const CREDLY_BADGES = [
 export const PORTFOLIO = [
   {
     title: 'WWW',
-    description: 'This website (johnmanko.com).  Uses Astro, GitHub Actions, and deployed as an AWS Lambda function.',
+    description: 'This website (johnmanko.com).  Uses Astro and AWS Amplify.',
     url: 'https://github.com/johnmanko/www',
     image: '/images/portfolio.webp',
     tags: ['astrojs', 'tailwind', 'typescript', 'github-pages']
