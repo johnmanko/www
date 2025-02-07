@@ -1,0 +1,12 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Error from '../components/Error.astro';
+---
+
+<Layout>
+  <Error error="404">
+    <p slot="title">Oh, dear!</p>
+    <p slot="subtitle">There's no honey here.</p>
+    <p slot="message">Maybe the page you're looking for has been moved or deleted.</p>
+  </Error>
+</Layout>

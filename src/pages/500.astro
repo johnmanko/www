@@ -1,0 +1,12 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Error from '../components/Error.astro';
+---
+
+<Layout>
+  <Error error="500">
+    <p slot="title">Oh, well.</p>
+    <p slot="subtitle">Don’t blame me if it rains</p>
+    <p slot="message">I’m just a messenger.  There's an error.</p>
+  </Error>
+</Layout>

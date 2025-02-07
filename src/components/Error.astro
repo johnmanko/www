@@ -1,0 +1,21 @@
+---
+const { error } = Astro.props;
+const gfx: string = (error === "404") ? '404': '500';
+
+---
+<div class="content-center">
+    <div class="hero bg-base-600 max-h-6xl ">
+        <div class="hero-content flex-col lg:flex-row">
+            <img src={`images/error-${gfx}.png`}
+                class="max-w-sm rounded-lg shadow-2xl" />
+            <div>
+                <h1 class="text-5xl font-bold mb-4"><slot name="title" /></h1>
+                <h2  class="text-2xl font-bold mb-4"><slot name="subtitle" /></h2>
+                <div class="mb-4 max-w-sm">
+                    <slot name="message"/>
+                </div>
+                <a href="/" class="btn btn-primary mt-4">Go Home</a>
+            </div>
+        </div>
+    </div>
+</div>
