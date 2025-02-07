@@ -6,7 +6,7 @@
     "baseUrl": ".",
     "paths": {
       "@Components/*": ["src/components/*"],
-      "@Content/*": ["src/Content/*"],
+      "@Content/*": ["src/content/*"],
       "@Layouts/*": ["src/layouts/*"],
       "@Pages/*": ["src/pages/*"],
       "@/*": ["src/*"]

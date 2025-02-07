@@ -17,7 +17,21 @@ import PortfolioProject from "@Components/PortfolioProject.astro";
 
   <div class="flex flex-wrap justify-center gap-4 space-y-4">
     {PORTFOLIO.map((project) => <PortfolioProject project={project} />)}
-
-    <div class="w-96 flex-none"></div>
   </div>
 </Layout>
+
+<script>
+  const buttons = document.querySelectorAll('button[data-portfolio-project="true"]');
+  buttons.forEach((button) => {
+      let link = button.getAttribute('data-portfolio-link');
+
+      if (link && link.length > 0) 
+        button.addEventListener('click', () => {
+          window.open(link, "_blank");
+        });
+      else {
+        button.classList.add('hidden');
+        button.setAttribute('disabled', 'disabled');
+      }
+  });
+</script>
