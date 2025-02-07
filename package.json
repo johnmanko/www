@@ -7,12 +7,6 @@
     "build": "astro build",
     "preview": "astro preview",
     "clean": "rm -rf ./dist && mkdir ./dist",
-    "clean-package": "rm -rf ./lambda && mkdir ./lambda",
-    "package-prep-copy-function": "cp -r ./dist/* ./lambda",
-    "package-prep-copy": "npm run clean-package && npm run package-prep-copy-function",
-    "package-prep": "npm run package-prep-copy",
-    "package-function": "cd ./lambda && zip -r ../lambda_function.zip ./",
-    "package": "npm run package-prep && npm run package-function",
     "astro": "astro"
   },
   "dependencies": {
