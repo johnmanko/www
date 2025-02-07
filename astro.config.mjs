@@ -6,14 +6,14 @@ import aws from "astro-sst";
 // https://astro.build/config
 export default defineConfig({
   site: 'https://www.johnmanko.com',
-  output: "server",
+  output: "static",
   build: {
     server: './',
     serverEntry: 'index.mjs',
   },
-  adapter: aws({
-    deploymentStrategy: "regional",
-  }),
+  // adapter: aws({
+  //   deploymentStrategy: "regional",
+  // }),
   vite: {
     plugins: [
       tailwindcss()
