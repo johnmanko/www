@@ -1,9 +1,10 @@
 ---
+import { Image } from "astro:assets";
 const { project } = Astro.props;
 ---
 <div class="card card-border w-96 shadow-sm mt-4 bg-slate-800">
   <figure>
-    <img src={project.image} alt="Project Header" />
+    <Image src={project.image} width="600" height="338" inferSize={true} alt="Project Header" />
   </figure>
   <div class="card-body">
     <h2 class="card-title">

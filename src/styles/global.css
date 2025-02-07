@@ -10,3 +10,8 @@
 @import "tailwindcss/utilities.css" layer(utilities);
 
 @import "@fortawesome/fontawesome-free/css/all.css";
+
+.certificate {
+    height: 180px;
+    width: 180px;
+}
