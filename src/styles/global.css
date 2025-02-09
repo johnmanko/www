@@ -12,6 +12,16 @@
 @import "@fortawesome/fontawesome-free/css/all.css";
 
 .certificate {
-    height: 180px;
-    width: 180px;
+    height: 120px;
+    width: 120px;
+}
+
+.gradient-header {
+    @apply font-extrabold;
+    @apply bg-gradient-to-r; 
+    @apply from-rose-400;
+    @apply via-fuchsia-500;
+    @apply to-indigo-500;
+    @apply bg-clip-text;
+    @apply text-transparent;
 }

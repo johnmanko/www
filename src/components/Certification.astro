@@ -3,6 +3,6 @@ import { Image } from "astro:assets";
 const { badge } = Astro.props;
 const badgeImage: string = `/badges/${badge}.png`;
 ---
-<a href={`https://www.credly.com/badges/${badge}/public_url`} target="_blank" class="brightness-80 hover:brightness-100 transition duration-300">
-    <Image src={badgeImage} width="180" height="180" alt="Certificate Badge"/>
+<a href={`https://www.credly.com/badges/${badge}/public_url`} target="_blank" class="mb-4 brightness-80 hover:brightness-100 transition duration-300">
+    <Image src={badgeImage} width="120" height="120" alt="Certificate Badge"/>
 </a>
