@@ -26,7 +26,7 @@ const { project } = Astro.props;
       </h3>
       <p>
           {project.description}
-          <div class="divider divider-primary"><i class="fa-brands fa-stack-overflow"/>tags</div>
+          <div class="divider divider-primary"><i class="fa-brands fa-stack-overflow"/></div>
       </p>
       <div class="card-actions justify-center">
         {project.tags.map((tag:string) => (<a class="link link-success link-hover" target="_blank" href={`https://stackoverflow.com/questions/tagged/${tag}`}><div class="badge badge-primary">{tag}</div></a>))}
