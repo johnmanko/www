@@ -39,11 +39,19 @@ export const CREDLY_BADGES = [
 
 export const PORTFOLIO = [
   {
+    title: 'Microservices Performance',
+    description: 'This project contains Spring Boot and other microservices demonstrating various performance techniques.',
+    url: 'https://github.com/johnmanko/microservice-performance',
+    code_url: 'https://github.com/johnmanko/microservice-performance',
+    image: '/images/portfolio/microservice-performance.webp',
+    tags: ['vegeta', 'load-testing', 'performance-testing', 'spring-boot', 'spring-async', 'asynchronous', 'spring-webflux', 'spring-reactive', 'virtual-threads']
+  },
+  {
     title: 'WWW',
     description: 'This website (johnmanko.com).  Uses Astro, DaisyUI/Tailwind, and AWS Amplify.',
     url: 'https://github.com/johnmanko/www',
     code_url: 'https://github.com/johnmanko/www',
-    image: '/images/portfolio.webp',
+    image: '/images/portfolio/www.webp',
     tags: ['astrojs', 'tailwind', 'typescript', 'github-pages']
   },
   {
@@ -51,7 +59,7 @@ export const PORTFOLIO = [
     description: 'Guides for configuring a local Kubernetes cluster with sample microservices.  This project is meant to help developers new to Kubernetes.',
     url: 'https://github.com/johnmanko/soup-to-nuts',
     code_url: 'https://github.com/johnmanko/soup-to-nuts',
-    image: 'https://raw.githubusercontent.com/johnmanko/soup-to-nuts/refs/heads/master/.www/portfolio.webp',
+    image: '/images/portfolio/soup-to-nuts.webp',
     tags: ['kubernetes', 'docker', 'microservices', 'kind', 'istio', 'cilium', 'rancher-desktop', 'quarkus', 'spring-boot', 'linux', 'macos']
   },
   {
@@ -59,7 +67,7 @@ export const PORTFOLIO = [
     description: 'A sample for using Vagrant and VirtualBox to stand up a multi-node Kubernetes cluster.',
     url: 'https://github.com/johnmanko/vagrant-k8s-cluster',
     code_url: 'https://github.com/johnmanko/vagrant-k8s-cluster',
-    image: 'https://raw.githubusercontent.com/johnmanko/vagrant-k8s-cluster/refs/heads/master/.www/portfolio.webp',
+    image: '/images/portfolio/vagrant-k8s-cluster.webp',
     tags: ['kubernetes', 'virtualbox', 'vagrant', 'linux', 'cloud-init']
   }
 ]
