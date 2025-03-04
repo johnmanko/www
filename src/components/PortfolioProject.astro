@@ -1,6 +1,8 @@
 ---
 import { Image } from "astro:assets";
 const { project } = Astro.props;
+project.tags?.sort();
+project.collectives?.sort();
 ---
 <div class="max-w-70 sm:max-w-80 md:max-w-96 flex-none ">
 

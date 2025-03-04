@@ -52,7 +52,7 @@ export const PORTFOLIO = [
     url: 'https://github.com/johnmanko/lamb-dahahah',
     code_url: 'https://github.com/johnmanko/lamb-dahahah',
     image: '/images/portfolio/lamb-dahahah.webp',
-    tags: ['amazon-web-services', 'aws-lambda', 'amazon-s3', 'aws-sdk', 'opentofu', 'aws-api-gateway', 'amazon-cognito', 'terraform', 'serverless', 'amazon-cloudwatch', 'python'],
+    tags: ['amazon-web-services', 'boto3', 'aws-lambda', 'amazon-s3', 'aws-sdk', 'opentofu', 'aws-api-gateway', 'amazon-cognito', 'terraform', 'serverless', 'amazon-cloudwatch', 'python'],
     collectives: ['aws']
   },
   {
