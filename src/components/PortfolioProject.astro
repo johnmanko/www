@@ -29,7 +29,8 @@ const { project } = Astro.props;
           <div class="divider divider-primary"><i class="fa-brands fa-stack-overflow"/></div>
       </p>
       <div class="card-actions justify-center">
-        {project.tags.map((tag:string) => (<a class="link link-success link-hover" target="_blank" href={`https://stackoverflow.com/questions/tagged/${tag}`}><div class="badge badge-primary">{tag}</div></a>))}
+        {project.collectives?.map((collective:string) => (<a class="link link-success link-hover" target="_blank" href={`https://stackoverflow.com/collectives/${collective}`}><div class="badge badge-secondary">{collective}</div></a>))}
+        {project.tags?.map((tag:string) => (<a class="link link-success link-hover" target="_blank" href={`https://stackoverflow.com/questions/tagged/${tag}`}><div class="badge badge-primary">{tag}</div></a>))}
       </div>
     </div>
   </div>

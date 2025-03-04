@@ -47,12 +47,22 @@ export const PORTFOLIO = [
     tags: ['vegeta', 'load-testing', 'performance-testing', 'spring-boot', 'spring-async', 'asynchronous', 'spring-webflux', 'spring-reactive', 'virtual-threads']
   },
   {
+    title: 'Lamb-dahahah',
+    description: 'Various Lambda functions and Terraform configurations for deploying them.',
+    url: 'https://github.com/johnmanko/lamb-dahahah',
+    code_url: 'https://github.com/johnmanko/lamb-dahahah',
+    image: '/images/portfolio/lamb-dahahah.webp',
+    tags: ['amazon-web-services', 'aws-lambda', 'amazon-s3', 'aws-sdk', 'opentofu', 'aws-api-gateway', 'amazon-cognito', 'terraform', 'serverless', 'amazon-cloudwatch', 'python'],
+    collectives: ['aws']
+  },
+  {
     title: 'WWW',
     description: 'This website (johnmanko.com).  Uses Astro, DaisyUI/Tailwind, and AWS Amplify.',
     url: 'https://github.com/johnmanko/www',
     code_url: 'https://github.com/johnmanko/www',
     image: '/images/portfolio/www.webp',
-    tags: ['astrojs', 'tailwind', 'typescript', 'github-pages']
+    tags: ['astrojs', 'tailwind', 'typescript', 'daisyui', 'aws-amplify', 'amazon-route53', 'aws-certificate-manager'],
+    collectives: ['aws']
   },
   {
     title: 'Soup to Nuts',
