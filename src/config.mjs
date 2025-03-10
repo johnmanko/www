@@ -48,11 +48,11 @@ export const PORTFOLIO = [
   },
   {
     title: 'Lamb-dahahah',
-    description: 'Various Lambda functions and Terraform configurations for deploying them.',
+    description: 'Various Python Lambda functions with Terraform configurations for deploying them to LocalStack.  Includes an basic Angular UI.',
     url: 'https://github.com/johnmanko/lamb-dahahah',
     code_url: 'https://github.com/johnmanko/lamb-dahahah',
     image: '/images/portfolio/lamb-dahahah.webp',
-    tags: ['amazon-web-services', 'boto3', 'aws-lambda', 'amazon-s3', 'aws-sdk', 'opentofu', 'aws-api-gateway', 'amazon-cognito', 'terraform', 'serverless', 'amazon-cloudwatch', 'python'],
+    tags: ['amazon-web-services', 'boto3', 'aws-lambda', 'amazon-s3', 'aws-sdk', 'angular', 'typescript', 'signals', 'daisyui', 'tailwind', 'opentofu', 'aws-api-gateway', 'amazon-cognito', 'terraform', 'serverless', 'amazon-cloudwatch', 'python'],
     collectives: ['aws']
   },
   {
