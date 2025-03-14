@@ -39,6 +39,14 @@ export const CREDLY_BADGES = [
 
 export const PORTFOLIO = [
   {
+    title: 'Telemetry Tom',
+    description: '♫ Ground Control to Metrics Tom. ♫  This project adds metrics to included projects and publishes them to Datadog.',
+    url: 'https://github.com/johnmanko/telemetry-tom',
+    code_url: 'https://github.com/johnmanko/telemetry-tom',
+    image: '/images/portfolio/telemetry-tom.webp',
+    tags: ['spring-boot', 'spring-async', 'micrometer', 'spring-micrometer', 'micrometer-tracing', 'datadog', 'spring-boot-actuator', 'open-telemetry']
+  },
+  {
     title: 'Microservices Performance',
     description: 'This project contains Spring Boot and other microservices demonstrating various performance techniques.',
     url: 'https://github.com/johnmanko/microservice-performance',
