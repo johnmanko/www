@@ -43,7 +43,7 @@ export const PORTFOLIO = [
     description: '“Open Sesame!”  Writing Spring Boot and Quarkus services to work with Auth0. Includes a basic rest service with protected and unprotected endpoints using both roles and permissions (not data-specific protection), and example mock and e2e (testcontainers) tests.',
     url: 'https://github.com/johnmanko/ali-baba-and-the-forty-thieves',
     code_url: 'https://github.com/johnmanko/ali-baba-and-the-forty-thieves',
-    image: '/images/portfolio/ali-baba-and-the-forty-thieves',
+    image: '/images/portfolio/ali-baba-and-the-forty-thieves.webp',
     tags: ['spring-boot', 'spring-security', 'spring-data-redis', 'quarkus', 'quarkus-testing', 'junit5', 'jwt', 'auth0', 'testcontainers', 'mockito']
   },
   {
