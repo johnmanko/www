@@ -2,11 +2,16 @@
 
 import Prose from '../components/Prose.astro';
 import Layout from '../layouts/Layout.astro';
-import { getEntry } from 'astro:content';
+import { getEntry, render } from 'astro:content';
 import Certifications from '@Components/Certifications.astro';
 
 const entry = await getEntry('resume', 'resume');
-const { Content } = await entry.render();
+
+if (entry === undefined) {
+  throw new Error('Missing content entry: resume/resume');
+}
+
+const { Content } = await render(entry);
 ---
 <Layout>
 

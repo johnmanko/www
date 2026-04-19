@@ -39,6 +39,14 @@ export const CREDLY_BADGES = [
 
 export const PORTFOLIO = [
   {
+    title: 'Notary',
+    description: 'Notary is a VSCode Extension for viewing and validating JWT tokens.  JWKS key registration from URL ("/.well-known/openid-configuration"), JWKS JSON, and manual PEM entry (JWKS reconstruction).  Direct support for RSA, EC, Oct, OKP, and custom key types.',
+    url: 'https://github.com/johnmanko/notary-vscode',
+    code_url: 'https://github.com/johnmanko/notary-vscode',
+    image: '/images/portfolio/notary-vscode.webp',
+    tags: ['visual-studio-code', 'authentication', 'jwt', 'oauth', 'openid-connect', 'vscode-extensions', 'typescript']
+  },
+  {
     title: 'Ali Baba and The Forty Thieves',
     description: '“Open Sesame!”  Writing Spring Boot and Quarkus services to work with Auth0. Includes basic rest services with protected and unprotected endpoints using both roles and permissions (not data-specific protection), and Angular UI with protected routes, and example mock and e2e (testcontainers) tests.',
     url: 'https://github.com/johnmanko/ali-baba-and-the-forty-thieves',
